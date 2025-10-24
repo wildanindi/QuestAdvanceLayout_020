@@ -29,12 +29,13 @@ import androidx.compose.ui.unit.sp
 
 
 @Composable
-fun ActivitasPertama(modifier: Modifier){
-    Column (modifier = Modifier
-        .padding(top = 100.dp)
-        .fillMaxSize(),
+fun ActivitasPertama(modifier: Modifier) {
+    Column(
+        modifier = Modifier
+            .padding(top = 100.dp)
+            .fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally
-    ){
+    ) {
         Text(
             text = stringResource(id = R.string.prodi),
             fontSize = 30.sp,
@@ -48,6 +49,16 @@ fun ActivitasPertama(modifier: Modifier){
 
         Spacer(modifier = Modifier.height(height = 25.dp))
 
+        Card(
+            modifier = Modifier
+                .height(height = 160.dp)
+                .fillMaxWidth(fraction = 1f)
+                .padding(all = 12.dp),
+            colors = CardDefaults.cardColors(
+                containerColor = Color.DarkGray
+            )
+        ) {
 
+        }
     }
 }
