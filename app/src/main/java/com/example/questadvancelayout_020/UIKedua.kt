@@ -162,6 +162,50 @@ fun ProfileWildan(modifier: Modifier) {
 
 
         }
+        Spacer(modifier = Modifier.height(16.dp))
+        Card(
+            modifier = Modifier
+                .height(height = 70.dp)
+                .fillMaxWidth(fraction = 0.9f)
+                .padding(start = 16.dp, end = 16.dp),
+            shape = RoundedCornerShape(100.dp),
+            colors = CardDefaults.cardColors(
+                containerColor = colorResource(id = R.color.UntukCard)
+            )
+        ) {
+            Row(
+                verticalAlignment = Alignment.CenterVertically,
+                modifier = Modifier
+                    .padding(all = 10.dp)
+                    .fillMaxSize()
+            ) {
+                Image(
+                    painter = painterResource(id = R.drawable.facebook),
+                    contentDescription = null,
+                    modifier = Modifier
+                        .size(size = 70.dp)
+                        .padding(all = 1.dp)
+
+                )
+                Spacer(modifier = Modifier.width(20.dp))
+                Column () {
+                    Text(
+                        text = stringResource(id = R.string.fb),
+                        fontSize = 20.sp,
+                        fontFamily = FontFamily.Serif,
+                        color = Color.Black,
+                        modifier = Modifier.padding(all = 15.dp)
+                    )
+
+                }
+
+
+            }
+
+
+
+        }
+
 
     }
 
