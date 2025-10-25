@@ -53,6 +53,44 @@ fun ProfileWildan(modifier: Modifier) {
                 .border(width = 3.dp, colorResource(id = R.color.UntukCard), CircleShape)
         )
 
+        Row(
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.Center,
+        ) {
+            Image(
+                painter = painterResource(id = R.drawable.insta),
+                contentDescription = null,
+                modifier = Modifier
+                    .size(size = 40.dp)
+                    .padding(all = 5.dp)
+
+            )
+            Image(
+                painter = painterResource(id = R.drawable.twitt),
+                contentDescription = null,
+                modifier = Modifier
+                    .size(size = 40.dp)
+                    .padding(all = 5.dp)
+
+            )
+            Image(
+                painter = painterResource(id = R.drawable.facebook),
+                contentDescription = null,
+                modifier = Modifier
+                    .size(size = 40.dp)
+                    .padding(all = 5.dp)
+
+            )
+            Image(
+                painter = painterResource(id = R.drawable.linkedin),
+                contentDescription = null,
+                modifier = Modifier
+                    .size(size = 40.dp)
+                    .padding(all = 5.dp)
+
+            )
+        }
+
 
     }
 
