@@ -250,6 +250,53 @@ fun ProfileWildan(modifier: Modifier) {
 
 
         }
+        Spacer(modifier = Modifier.height(80.dp))
+
+
+        Card(
+            modifier = Modifier
+                .height(height = 70.dp)
+                .fillMaxWidth(fraction = 0.6f)
+                .padding(horizontal =  16.dp),
+            shape = RoundedCornerShape(100.dp),
+            colors = CardDefaults.cardColors(
+                containerColor = Color.Gray
+            )
+        ) {
+            Row(
+                verticalAlignment = Alignment.CenterVertically,
+                modifier = Modifier
+                    .padding(all = 10.dp)
+                    .fillMaxSize()
+            ) {
+                Image(
+                    painter = painterResource(id = R.drawable.back),
+                    contentDescription = null,
+                    modifier = Modifier
+                        .size(size = 70.dp)
+                        .padding(all = 1.dp)
+
+                )
+
+                Spacer(modifier = Modifier.width(5.dp))
+
+                Column () {
+                    Text(
+                        text = stringResource(id = R.string.back),
+                        fontSize = 15.sp,
+                        fontFamily = FontFamily.Serif,
+                        fontWeight = FontWeight.Bold,
+                        color = colorResource(id = R.color.white),
+                        modifier = Modifier.padding(vertical = 15.dp)
+                    )
+
+                }
+
+
+            }
+
+
+        }
 
     }
 
