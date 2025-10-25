@@ -118,6 +118,50 @@ fun ProfileWildan(modifier: Modifier) {
             fontFamily = FontFamily.Serif,
             color = Color.White
         )
+        Spacer(modifier = Modifier.height(20.dp))
+        Card(
+            modifier = Modifier
+                .height(height = 70.dp)
+                .fillMaxWidth()
+                .padding(horizontal =  16.dp),
+            shape = RoundedCornerShape(100.dp),
+            colors = CardDefaults.cardColors(
+                containerColor = colorResource(id = R.color.UntukCard)
+            )
+        ) {
+            Row(
+                verticalAlignment = Alignment.CenterVertically,
+                modifier = Modifier
+                    .padding(all = 10.dp)
+                    .fillMaxSize()
+            ) {
+                Image(
+                    painter = painterResource(id = R.drawable.insta),
+                    contentDescription = null,
+                    modifier = Modifier
+                        .size(size = 70.dp)
+                        .padding(all = 1.dp)
+
+                )
+
+                Spacer(modifier = Modifier.width(70.dp))
+
+                Column () {
+                    Text(
+                        text = stringResource(id = R.string.nick),
+                        fontSize = 20.sp,
+                        fontFamily = FontFamily.Serif,
+                        color = Color.Black,
+                        modifier = Modifier.padding(vertical = 15.dp)
+                    )
+
+                }
+
+
+            }
+
+
+        }
 
     }
 
