@@ -91,6 +91,33 @@ fun ProfileWildan(modifier: Modifier) {
             )
         }
 
+        Spacer(modifier = Modifier.height(height = 15.dp))
+
+        Text(
+            text = stringResource(id = R.string.nama2),
+            fontSize = 30.sp,
+            fontWeight = FontWeight.Bold,
+            color = Color.White
+
+        )
+
+        Spacer(modifier = Modifier.height(height = 5.dp))
+
+        Text(
+            text = stringResource(id = R.string.nick),
+            fontSize = 20.sp,
+            fontWeight = FontWeight.Medium,
+            color = Color.Gray
+        )
+
+        Spacer(modifier = Modifier.height(height = 15.dp))
+
+        Text(
+            text = stringResource(id = R.string.bio),
+            fontSize = 20.sp,
+            fontFamily = FontFamily.Serif,
+            color = Color.White
+        )
 
     }
 
