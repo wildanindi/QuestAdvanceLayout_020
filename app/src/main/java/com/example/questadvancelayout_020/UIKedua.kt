@@ -297,7 +297,20 @@ fun ProfileWildan(modifier: Modifier) {
 
 
         }
+        Spacer(modifier = Modifier.height(16.dp))
 
+        Box(
+            modifier = Modifier
+                .fillMaxSize()
+        ){
+            Text(
+                text = stringResource(id = R.string.copy),
+                color = Color.White,
+                modifier = Modifier
+                    .align(Alignment.BottomCenter)
+                    .padding(bottom = 30.dp)
+            )
+        }
     }
 
 
